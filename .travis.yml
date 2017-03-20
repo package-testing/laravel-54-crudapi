@@ -1,0 +1,22 @@
+language: php
+php:
+  - "5.6"
+  - "7.0"
+  - "7.1"
+
+services:
+ - mysql
+
+before_install:
+ - mysql -e 'CREATE DATABASE crudapi_test;'
+
+install:
+  - composer install
+  - composer dumpautoload
+  - cp .env.travis .env
+  - php artisan key:generate
+  - php artisan migrate
+  - php artisan db:seed
+  - php artisan user:role --email=testadmin@example.com --role=Administrator
+
+script: ./vendor/bin/phpunit --coverage-text
