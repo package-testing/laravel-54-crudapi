@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "69879e406a43af317353b191656aafd5",
-    "content-hash": "96098e473b028cdb2529580554a1ae3e",
+    "hash": "de5f614ad8c362e7e6b30cbac0470337",
+    "content-hash": "7ef7d433f95d53e745f09842fa43f4b0",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1765,6 +1765,47 @@
                 "dump"
             ],
             "time": "2017-02-20 13:45:48"
+        },
+        {
+            "name": "taskforcedev/laravel-support",
+            "version": "v1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/taskforcedev/laravel-support.git",
+                "reference": "4cac98beac03c6e7f72362bd0cd190f12cb32dc9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/taskforcedev/laravel-support/zipball/4cac98beac03c6e7f72362bd0cd190f12cb32dc9",
+                "reference": "4cac98beac03c6e7f72362bd0cd190f12cb32dc9",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "5.*",
+                "php": ">=5.6.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "5.3.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Taskforcedev\\LaravelSupport\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Taskforcedev",
+                    "email": "taskforce2eu@gmail.com"
+                }
+            ],
+            "description": "Laravel support package.  Used by other Taskforcedev packages.",
+            "keywords": [
+                "laravel",
+                "support"
+            ],
+            "time": "2017-02-02 09:36:52"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
