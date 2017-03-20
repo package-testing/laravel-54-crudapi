@@ -167,6 +167,8 @@ return [
          * Package Service Providers...
          */
         Laravel\Tinker\TinkerServiceProvider::class,
+        Taskforcedev\LaravelSupport\ServiceProvider::class,
+        Taskforcedev\CrudApi\ServiceProvider::class,
 
         /*
          * Application Service Providers...

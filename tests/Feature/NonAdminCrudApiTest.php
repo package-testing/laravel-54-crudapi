@@ -18,6 +18,6 @@ class NonAdminCrudApiTest extends TestCase
     public function testVisitingRolesAsNonAdminRedirectsHome()
     {
         $response = $this->get('/admin/Role')
-             ->assertSee('Laravel');
+            ->assertRedirect('/');
     }
 }

@@ -26,4 +26,32 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    /**
+     * Determine if a user has a given role
+     *
+     * @param string|integer $role Role id or name.
+     *
+     * @return bool
+     */
+    public function hasRole($role)
+    {
+        if (!is_int($role)) {
+            // Get the role id from it's name
+            $r = Role::where('name', $role)->first();
+            if ($r === null) {
+                // If role doesn't exist return false;
+                return false;
+            }
+            $role = $r->id;
+        }
+        try {
+            $userRole = UserRole::where('user_id', $this->id)
+                            ->where('role_id', $role)
+                            ->firstOrFail();
+            return true;
+        } catch (ModelNotFoundException $e) {
+            return false;
+        }
+    }
 }
