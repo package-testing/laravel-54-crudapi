@@ -1816,16 +1816,16 @@
         },
         {
             "name": "taskforcedev/laravel-support",
-            "version": "v1.1.1",
+            "version": "v1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/taskforcedev/laravel-support.git",
-                "reference": "4cac98beac03c6e7f72362bd0cd190f12cb32dc9"
+                "reference": "af3ccab4c21ba25c420b88418bb0a985dbbf2a12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/taskforcedev/laravel-support/zipball/4cac98beac03c6e7f72362bd0cd190f12cb32dc9",
-                "reference": "4cac98beac03c6e7f72362bd0cd190f12cb32dc9",
+                "url": "https://api.github.com/repos/taskforcedev/laravel-support/zipball/af3ccab4c21ba25c420b88418bb0a985dbbf2a12",
+                "reference": "af3ccab4c21ba25c420b88418bb0a985dbbf2a12",
                 "shasum": ""
             },
             "require": {
@@ -1853,7 +1853,7 @@
                 "laravel",
                 "support"
             ],
-            "time": "2017-02-02 09:36:52"
+            "time": "2017-03-20 16:00:44"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
