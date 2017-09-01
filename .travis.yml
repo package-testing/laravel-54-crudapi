@@ -8,7 +8,9 @@ services:
  - mysql
 
 before_install:
- - mysql -u travis -e 'CREATE DATABASE crudapi_test;'
+ - mysql -u root -e 'CREATE DATABASE crudapi_test;'
+ - mysql -u root -e 'GRANT ALL ON crudapi_text TO "travis'@'localhost";'
+ - mysql -u root -e 'GRANT ALL ON crudapi_text TO "travis'@'%";'
 
 install:
   - composer install
