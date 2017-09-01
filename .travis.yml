@@ -8,7 +8,7 @@ services:
  - mysql
 
 before_install:
- - mysql -e 'CREATE DATABASE crudapi_test;'
+ - mysql -u travis -e 'CREATE DATABASE crudapi_test;'
 
 install:
   - composer install
